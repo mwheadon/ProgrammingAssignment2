@@ -4,7 +4,9 @@
 ## and storing the values. 
 
 
-## makeCacheMatrix() generates a "special matrix", which is really a list of ## functions for storing data. The functions of makeCacheMatrix() store the ## value of its raw inputed matrix, as well as, any cached value provided by 
+## makeCacheMatrix() generates a "special matrix", which is really a list of 
+## functions for storing data. The functions of makeCacheMatrix() store the 
+## value of its raw inputed matrix, as well as, any cached value provided by 
 ## another function (e.g. cacheSolve())
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -23,7 +25,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## cacheSolve() returns the inverse of the raw data stored in a "special 
 ## matrix." However, when used iteratively, cacheSolve() will only compute 
 ## and inverse for a given "special matrix" once. This is because it stores 
-## its output in the "special matrix" given as input, and will check if there ## is a stored inverse before computing one. 
+## its output in the "special matrix" given as input, and will check if 
+## there is a stored inverse before computing one. 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
